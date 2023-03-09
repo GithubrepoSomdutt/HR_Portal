@@ -21,17 +21,14 @@ public class CityController {
 private CityService cityService;
 
 @PostMapping("/cities")
-
-public City saveCity(
-     @RequestBody City city)
+public City saveCity( @RequestBody City city)
 {
     return cityService.saveCity(city);
 }
 
 // Read operation
 @GetMapping("/city")
-
-public List<City> fetchDepartmentList()
+public List<City> fetchCityList()
 {
     return cityService.fetchCityList();
 }
@@ -40,7 +37,7 @@ public List<City> fetchDepartmentList()
 @PutMapping("/cities/{id}")
 
 public City
-updateDepartment(@RequestBody City city,
+updateCity (@RequestBody City city,
                  @PathVariable("id") Long cityId)
 {
     return cityService.updateCity(

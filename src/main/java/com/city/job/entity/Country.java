@@ -12,5 +12,16 @@ import jakarta.persistence.Table;
 
 	    @Id
 	    @GeneratedValue(strategy = GenerationType.IDENTITY)
-	    private Long id;
+	    private int country_id1;
+
+		public int getCountry_id1() {
+			return country_id1;
+		}
+
+		public void setCountry_id1(int country_id1) {
+			this.country_id1 = country_id1;
+		}
+	    
+	    
+	    
 }

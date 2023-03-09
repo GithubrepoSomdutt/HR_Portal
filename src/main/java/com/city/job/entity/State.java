@@ -12,11 +12,11 @@ import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "state_1")
+@Table(name = "state_id1")
 public class State {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private int state_id1;
     
     
     @OneToMany(mappedBy = "state", cascade = CascadeType.ALL, orphanRemoval = true)
